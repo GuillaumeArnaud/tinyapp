@@ -61,7 +61,7 @@
 				<version>${gatling.version}</version>
 				<executions>
 					<execution>
-<!-- 						<phase>test</phase> -->
+						<phase>test</phase>
 <!-- 						<goals> -->
 <!-- 							<goal>execute</goal> -->
 <!-- 						</goals> -->
