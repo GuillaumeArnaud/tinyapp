@@ -78,7 +78,15 @@
                             <goal>execute</goal>
                         </goals>
                         <configuration>
-                        	<simulationsFolder>src/test/scala</simulationsFolder>
+                        	<configDir>src/test/resources</configDir>
+              <dataFolder>src/test/resources/data</dataFolder>
+              <simulationsFolder>src/test/resources/simulations</simulationsFolder>
+              <resultsFolder>target/gatling/results</resultsFolder>
+              <simulation>com.vsct.geo.ScnGEO</simulation>
+              <includes>
+                <include>**/*.scala</include>
+              </includes>
+
                         	<excludes>
                                 <exclude>advanced/*.scala</exclude>
                             </excludes>
