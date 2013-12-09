@@ -64,7 +64,6 @@
 
 <build>
 	<finalName>tinyapp</finalName>
-	<testSourceDirectory>src/test/scala</testSourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>io.gatling</groupId>
@@ -73,21 +72,9 @@
 				<executions>
 					<execution>
 						<phase>test</phase>
-						<goals>
-							<goal>execute</goal>
-						</goals>
-						<configuration>
-						<dataFolder>src/test/resources/data</dataFolder>
-                            <resultsFolder>target/gatling/results</resultsFolder>
-                            <requestBodiesFolder>src/test/resources/request-bodies</requestBodiesFolder>
-                            <simulationsFolder>src/test/scala</simulationsFolder>
-                            <includes>
-                                <include>**/*.scala</include>
-                            </includes>
-							<excludes>
-								<exclude>advanced/*.scala</exclude>
-							</excludes>
-						</configuration>
+                        <goals>
+                            <goal>execute</goal>
+                        </goals>
 					</execution>
 				</executions>
 			</plugin>
