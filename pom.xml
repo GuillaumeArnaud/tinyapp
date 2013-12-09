@@ -71,56 +71,7 @@
 				<groupId>io.gatling</groupId>
 				<artifactId>gatling-maven-plugin</artifactId>
 				<version>${gatling.version}</version>
-				<executions>
-					<execution>
-						<phase>test</phase>
-                        <goals>
-                            <goal>execute</goal>
-                        </goals>
-                        <configuration>
-                        	<configDir>src/test/resources</configDir>
-              <dataFolder>src/test/resources/data</dataFolder>
-              <simulationsFolder>src/test/resources/simulations</simulationsFolder>
-              <resultsFolder>target/gatling/results</resultsFolder>
-              <simulation>com.vsct.geo.ScnGEO</simulation>
-              <includes>
-                <include>**/*.scala</include>
-              </includes>
-
-                        	<excludes>
-                                <exclude>advanced/*.scala</exclude>
-                            </excludes>
-                        </configuration>
-					</execution>
-				</executions>
 			</plugin>
-			<plugin>
-			<groupId>org.scala-tools</groupId>
-			<artifactId>maven-scala-plugin</artifactId>
-			<executions>
-
-				<execution>
-					<id>compile</id>
-					<goals>
-						<goal>compile</goal>
-					</goals>
-					<phase>compile</phase>
-				</execution>
-				<execution>
-					<id>test-compile</id>
-					<goals>
-						<goal>testCompile</goal>
-					</goals>
-					<phase>test-compile</phase>
-				</execution>
-                <execution>
-                   <phase>process-resources</phase>
-                   <goals>
-                     <goal>compile</goal>
-                   </goals>
-                </execution>
-			</executions>
-		</plugin>
 		</plugins>
 	</build>
 </project>
