@@ -53,6 +53,8 @@
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
             <version>${scala.version}</version>
+            
+            
         </dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -75,6 +77,9 @@
                         <goals>
                             <goal>execute</goal>
                         </goals>
+                        <configuration>
+                        	<simulationsFolder>src/test/scala</simulationsFolder>
+                        </configuration>
 					</execution>
 				</executions>
 			</plugin>
