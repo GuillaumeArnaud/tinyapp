@@ -79,6 +79,9 @@
                         </goals>
                         <configuration>
                         	<simulationsFolder>src/test/scala</simulationsFolder>
+                        	<excludes>
+                                <exclude>advanced/*.scala</exclude>
+                            </excludes>
                         </configuration>
 					</execution>
 				</executions>
